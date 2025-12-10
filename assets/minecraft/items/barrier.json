@@ -1,0 +1,26 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/barrier"
+    },
+    "cases": [
+      {
+        "when": "reset",
+        "model": {
+          "type": "model",
+          "model": "item/reset"
+        }
+      },
+      {
+        "when": "test",
+        "model": {
+          "type": "model",
+          "model": "item/diamond_sword"
+        }
+      }
+    ]
+  }
+}
